@@ -480,7 +480,7 @@ display: none;
 }
 
 .pricing-table .content ul li{
-    font-size: 14px;
+    font-size: 20px;
     list-style: none;
     color:#555;
     text-align: left;
@@ -506,7 +506,7 @@ display: none;
   -moz-transition: all 0.3 linear;
   transition: all 0.3 linear;
   border: none;
-  font-size: 1rem;
+  font-size:20px;
   text-transform: capitalize;
   position: relative;
   text-decoration: none;
