@@ -7,47 +7,160 @@
     <title>Fivespark</title>
     <link rel="shortcut icon" href="https://fivespark.com/hubfs/favicon.svg">
     <link rel="stylesheet" href="/style/style.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
-    </head>
-    <body>
-      <!-- loader -->
-      <div id="preloader"></div>
-      <style>
-            #preloader{
-        background: var(--wit) url(/style/img/gift.gif) no-repeat center center;
-        background-size: 10%;
-        width: 100%;
-        height: 100vh;
-        position: fixed;
-        z-index: 100;
-    }
-      </style> 
-      <nav class="navbar">
-    <div class="content">
-      <div class="logo">
-        
-        <a href="#">Fivespark</a>
-      </div>
-      <ul class="menu-list">
-        <div class="icon cancel-btn">
-          <i class="fas fa-times"></i>
-        </div>
-        <li><a href="#">De digitale werkplek</a></li>
-        <li><a href="#">Klanten</a></li>
-        <li><a href="#">Kennis</a></li>
-        <li><a href="#">Over Ons</a></li>
-        <li><a href="#">Plan een Demo</a></li>
-      </ul>
-      <div class="icon menu-btn">
-        <i class="fas fa-bars"></i>
-      </div>
-    </div>
-  </nav>
+  </head>
 
-  <div class="banner"></div>
-  <h1>Fivespark is een full service provider die IT weer makkelijk maakt</h1>
-  <hr class="hr"></hr>
-  <div class="p">Bekijk ons service contracten</div>
-  <div class="scroll-down"></div>
+  <body>
+    <div id="preloader" class="<%- typeof window === 'undefined' ? 'js-disable' : 'js-enable' %>"></div>
+<style>
+  #preloader {
+    background: var(--wit) url(/style/img/gift.gif) no-repeat center center;
+    background-size: 10%;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+  }
+</style>
+
+    <!-- Header -->
+    <section id="header" aria-label="Header">
+      <div class="header container">
+        <div class="nav-bar">
+          <div class="brand">
+            <a href="#hero">
+              <picture>
+                <source srcset="/style/img/logo.png" type="image/avif">
+                <source srcset="/style/img/logo.png" type="image/webp">
+                <img src="/style/img/logo.png" class="img" loading="lazy" alt="logo fivespark" width="50px" height="30px">
+              </picture>
+            </a>
+          </div>
+          <div class="nav-list">
+            <div class="hamburger">
+              <div class="bar"></div>
+            </div>
+            <ul>
+              <li><a href="#hero" data-after="Home">Home</a></li>
+              <li><a href="#projects" data-after="Projects">5 Sparks</a></li>
+              <li><a href="#services" data-after="Service">Services</a></li>
+              <li><a href="#about" data-after="About">About</a></li>
+              <li><a href="#contact" data-after="Contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero Section  -->
+    <section id="hero" aria-label="Hero Section">
+      <div class="hero container">
+        <div>
+          <h1> Fivespark, <span></span></h1>
+          <h1>is een full service provider  <span></span></h1>
+          <h1>die IT weer makkelijk maakt <span></span></h1>
+          <a href="#projects" type="button" class="button-hero">Bekijk Onze Diensten </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" aria-label="Projects Section">
+      <div class="projects container ">
+        <div class="projects-header hidden">
+          <h1 class="section-title">Fivespark <span>5 Sparks</span></h1>
+        </div>
+        <div class="all-projects">
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Managed services</h1>
+              <h2>Zorgeloos aan de slag</h2>
+              <p>Met gestroomlijnde IT bespaar je tijd, onnodige kosten en een hoop frustratie. Bovendien draagt een goede IT-infrastructuur eraan bij dat bedrijfsdoelstellingen worden gehaald. Fivespark zorgt voor een maximale uptime, stabiliteit en beveiliging. Van managed routers en firewalls tot aan het volledige beheer van de digitale werkplek. Wij zorgen voor de laatste updates en monitoren op de achtergrond op veiligheid en eventuele risico’s. Zodat jij je zorgeloos kunt focussen op je kerntaken. </p>
+            </div>
+            <div class="project-img">
+              <picture>
+                <source srcset="style/img/2.png" type="image/avif">
+                <source srcset="style/img/2.png" type="image/webp">
+                <img src="style/img/2.png" class="project-img" loading="lazy" alt="image 5 sparks" width="50px" height="30px">
+              </picture>
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-info ">
+              <h1>Software development</h1>
+              <h2>Composable data hubs & future proof bedrijfsapplicaties</h2>
+              <p>Werk je met verouderde applicaties, chaotische data en API-spaghetti? Dat hoeft niet meer met onze Composable Data Hubs. 
+
+                Ons team staat voor je klaar om je (bedrijfskritische) maatwerk-applicaties en data-omgeving te moderniseren. We zorgen voor veilige, gebruiksvriendelijke en betrouwbare processen. Zodat jij je op je kerntaken kunt focussen. Lees verder in onze whitepaper over de Composable Data Hub. </p>
+            </div>
+            <div class="project-img">
+              <picture>
+                <source srcset="/style/img/3.png" type="image/avif">
+                <source srcset="/style/img/3.png" type="image/webp">
+                <img src="/style/img/3.png" class="project-img" loading="lazy" alt="image 5 sparks" width="50px" height="30px">
+              </picture>
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Hardware</h1>
+              <h2>Laptops, tablets en telefoons zonder gedoe</h2>
+              <p>Bij Fivespark kun je terecht voor al je benodigde hardware. Van smartphones tot vaste telefonie, van tablet tot laptop. Daarnaast kunnen we het beheer voor je uit handen nemen, zodat je grip houdt op het gebruik en de veiligheid van alle apparatuur. We adviseren je welke hardware het beste binnen je organisatie past, en denken met je mee over kopen of leasen. </p>
+            </div>
+            <div class="project-img">
+              <picture>
+                <source srcset="/style/img/4.png" type="image/avif">
+                <source srcset="/style/img/4.png" type="image/webp">
+                <img src="/style/img/4.png" class="project-img" loading="lazy" alt="image 5 sparks" width="50px" height="30px">
+              </picture>
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Connectiviteit</h1>
+              <h2>Altijd en overal zorgeloos verbonden</h2>
+              <p>Connectiviteit simpel geregeld.
+
+                Je connectiviteit optimaal geregeld hebben is essentieel voor praktisch iedere bedrijfsvoering. Daarnaast is het toepassen van de juiste beveiliging op de verbindingen een must.</p>
+            </div>
+            <div class="project-img">
+              <picture>
+                <source srcset="/style/img/6.png" type="image/avif">
+                <source srcset="/style/img/6.png" type="image/webp">
+                <img src="/style/img/6.png" class="project-img" loading="lazy" alt="image 5 sparks" width="50px" height="30px">
+              </picture>
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Adoptie</h1>
+              <h2>Adoptie zonder gedoe</h2>
+              <p>Succesvolle implementatie 
+
+                Procesverandering- en adoptie binnen de organisatie kan flinke uitdagingen met zich meebrengen. Helemaal wanneer er al eerdere pogingen zijn gedaan, maar de verandering nog niet volledig succesvol is geïmplementeerd.</p>
+            </div>
+            <div class="project-img">
+              <picture>
+                <source srcset="/style/img/5.png" type="image/avif">
+                <source srcset="/style/img/5.png" type="image/webp">
+                <img src="/style/img/5.png" class="project-img" loading="lazy" alt="image 5 sparks" width="50px" height="30px">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- About Section -->
+    <section id="about" aria-label="About Section">
+      <div class="about container hidden">
+        <div class="col-right">
+          <h1 class="section-title">Service <span>&</span> Support</h1>
+          <h2>Service Contracts voor de 5 sparks</h2>
+          <p>Bekijk onze verschillende servicecontracten en besluit welk contract bij u past: het Basic-contract voor een betaalbare optie, het Compleet-contract voor uitgebreide dekking en het Premium-contract voor exclusieve voordelen en prioritaire ondersteuning. Kies het contract dat perfect aansluit bij uw wensen en geniet van gemoedsrust en optimale service!</p>
+          <a href="#services" class="button">Bekijk de servicecontracten</a>
+        </div>
+      </div>
+    </section>
+  

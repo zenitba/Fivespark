@@ -1,33 +1,35 @@
 <%- include('./partials/head.ejs') %>
-<!-- <% if (Array.isArray(data)) { %>
-  <% data.forEach(activities => { %>
-    <h2><%= activities.title %></h2>
-    <p><%= activities.description %></p>
-  <% }) %>
-<% } else { %>
-  <p>No data available.</p>
-<% } %> -->
-<h2>Activiteit title</h2>
-<div class="wrapper">
-          <div class="pricing-table">
-              <div class="head">
-                  <h4 class="title"></h4>
-              </div>
-              <div class="content">
-                  <div class="price">
-                      <h3>titel</h3>
-                  </div>
-                  <ul>
-                      <li>activiteit</li>
-                      <li><del>activitei</del>
-                  </ul>
-                  <div class="sign-up">
-                      <a href="#" class="btn bordered radius">Signup Now</a>
-                  </div>
-              </div>
+<!-- basis -->
+<% selectedContracts.forEach(contract => { %>
+    <section id="services" aria-label="services">
+    <div class="services">
+      <div class="pricing-table">
+        <div class="head">
+          <h3 class="title"><%= contract.name %></h3>
+        </div>
+        <div class="content">
+          <div class="price">
+            <h4>€<%- contract.list_price %></h4>
           </div>
-</div>
+          <ul>
+            <% activityTranslations.data.forEach(activityTranslation => { %>
+              <% const activity = activityTranslation.activity; %>
+              <li><i class="fa fa-check" aria-hidden="true"></i>
+                <%- activityTranslation.title %>
+              </li>
+            <% }); %>
+          </ul>
+          <div class="sign-up">
+            <a href="#" class="btn bordered radius">Selecteer deze plan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<% }); %>
 
+
+  
 
 
 <%- include('./partials/foot.ejs') %>
