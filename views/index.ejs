@@ -1,15 +1,15 @@
 <%- include('./partials/head.ejs') %>
 <!-- basis -->
-<% selectedContracts.forEach(contract => { %>
-    <section id="services" aria-label="services">
+<% for( let i = 0; i < selectedContracts.length; i++ ) { %>
+  <section id="services" aria-label="services">
     <div class="services">
       <div class="pricing-table">
         <div class="head">
-          <h3 class="title"><%= contract.name %></h3>
+          <h3 class="title"><%- selectedContractTranslations[i].title %></h3>
         </div>
         <div class="content">
           <div class="price">
-            <h4>€<%- contract.list_price %></h4>
+            <h4>€<%- selectedContracts[i].list_price %></h4>
           </div>
           <ul>
             <% activityTranslations.data.forEach(activityTranslation => { %>
@@ -26,7 +26,7 @@
       </div>
     </div>
   </section>
-<% }); %>
+	<% } %>
 
 
   
