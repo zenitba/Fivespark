@@ -1,5 +1,28 @@
-server.get("/", async (req, res) => {
+import express from "express"
+import bodyParser from "body-parser"
+import * as path from "path"
+import * as dotenv from "dotenv"
+import fetch from "node-fetch";
 
+// load .env file
+dotenv.config()
+
+const server = express()
+
+server.set("view engine", "ejs")
+server.set("views", "./views")
+server.set("port", process.env.PORT || 8000)
+
+server.use(express.static(path.resolve('public')))
+server.use(bodyParser.json());
+server.use(bodyParser.urlencoded({extended: true}))
+
+server.listen(server.get("port"), () => {
+	console.log(`Application started on http://localhost:${server.get("port")}`)
+});
+
+
+server.get("/", async (req, res) => {
 
 
   const serviceContracts = await dataFetch("https://api.fivespark.com/items/service_contracts")
