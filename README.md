@@ -16,11 +16,43 @@
 ## Gebruik 👩🏽‍💻
 
 ## Kenmerken ✅
+Bij het maken van deze opdracht heb ik gebruik gemaakt van:
+
+* 🔌Node
+* 📟Ejs
+* 📡Express
+* 📟 HTML
+* 🎨 CSS
+* 📝JS
+* ✈️ API Fivespark
 
 ## Installatie⚙️
 
-## Bronnen📱
+1.Installeer` Node.`
 
+2.Fork deze leertaak.
+
+3.Code klonen naar Github Desktop.
+
+4.Code open in VSCode of een andere editor.
+
+5.Terminal open.
+
+6`.Npm install` (typen in je terminal, daarna enter druken).
+
+7.`gitignore `(aparte file aanmaken (VSCode, editor) en dan node_modules schrijven in de file)
+
+8.Npm start (typen in je terminal).
+
+9.`Localhost:8000` (live link om je website te zien, link van de server).
+
+10.Project live zetten met `Cyclic`
+
+## Bronnen📱
+API FIVESPARK
+>
+>
+>
 ## Licentie 🌐
 
 This project is licensed under the terms of the [MIT license](./LICENSE).
