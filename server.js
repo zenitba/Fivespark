@@ -29,7 +29,7 @@ server.get("/", async (req, res) => {
 
 
 	const serviceContracts = await dataFetch("https://api.fivespark.com/items/service_contracts")
-	const selectedContracts = serviceContracts.data.filter(contract => contract.id === 3 || contract.id === 4 || contract.id === 7)
+	const selectedContracts = serviceContracts.data && serviceContracts.data.filter(contract => contract.id === 3 || contract.id === 4 || contract.id === 7);
 
 
 	const activitiesServicesContracts = await dataFetch("https://api.fivespark.com/items/activities_service_contracts")
