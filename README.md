@@ -12,8 +12,10 @@
   * [Licentie 🌐](#licentie)
 
 ## Beschrijving📝
+Ik heb een landingpage gemaakt met bijbehorende informatie over de categorie en de servicecontracten die zij bieden voor hun klanten. In de servicecontracten kun je zien welke activiteiten daarbij horen en de prijzen per contract.
 
 ## Gebruik 👩🏽‍💻
+De landing page geeft klanten de informatie over de verschillende service contracten.
 
 ## Kenmerken ✅
 Bij het maken van deze opdracht heb ik gebruik gemaakt van:
@@ -46,13 +48,12 @@ Bij het maken van deze opdracht heb ik gebruik gemaakt van:
 
 9.`Localhost:8000` (live link om je website te zien, link van de server).
 
-10.Project live zetten met `Cyclic`
+10.Project live zetten met `Adaptable`
 
 ## Bronnen📱
-API FIVESPARK
->
->
->
+>API FIVESPARK
+>Youtube
+>https://www.w3schools.com/css/css3_animations.asp
 ## Licentie 🌐
 
 This project is licensed under the terms of the [MIT license](./LICENSE).
